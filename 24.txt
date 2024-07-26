@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int batteryLevel;
+    cout << "Enter the battery level (0-100): ";
+    cin >> batteryLevel;
+    if(batteryLevel == 0) {
+        cout << "Battery level is 0, shutting down the system." << endl;
+    }
+    return 0;
+}

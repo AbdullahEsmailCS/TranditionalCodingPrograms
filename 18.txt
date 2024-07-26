@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double salesAmount, commissionRate, commission;
+    cout << "Enter the sales amount: ";
+    cin >> salesAmount;
+    cout << "Enter the commission rate (as a percentage): ";
+    cin >> commissionRate;
+    commission = salesAmount * (commissionRate / 100);
+    cout << "The commission is: " << commission << endl;
+    return 0;
+}

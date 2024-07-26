@@ -1,0 +1,31 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    double radius, number;
+    cout << "Enter the radius of the circle: ";
+    cin >> radius;
+    cout << "Enter a number: ";
+    cin >> number;
+    
+    double area = M_PI * pow(radius, 2);
+    double square = pow(number, 2);
+    double power = pow(number, 3);
+    double logValue = log(number);
+    double absValue = abs(number);
+    double ceilingValue = ceil(number);
+    double floorValue = floor(number);
+    double truncateValue = trunc(number);
+
+    cout << "Circle Area: " << area << endl;
+    cout << "Square: " << square << endl;
+    cout << "Cube: " << power << endl;
+    cout << "Log: " << logValue << endl;
+    cout << "Absolute Value: " << absValue << endl;
+    cout << "Ceiling Value: " << ceilingValue << endl;
+    cout << "Floor Value: " << floorValue << endl;
+    cout << "Truncate Value: " << truncateValue << endl;
+    
+    return 0;
+}

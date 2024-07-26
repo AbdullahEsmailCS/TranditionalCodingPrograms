@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double serviceCharge, overdraftFee, transactionFee;
+    cout << "Enter the service charge: ";
+    cin >> serviceCharge;
+    cout << "Enter the overdraft fee: ";
+    cin >> overdraftFee;
+    cout << "Enter the transaction fee: ";
+    cin >> transactionFee;
+
+    double totalFees = serviceCharge + overdraftFee + transactionFee;
+    cout << "The total fees are: " << totalFees << endl;
+    return 0;
+}

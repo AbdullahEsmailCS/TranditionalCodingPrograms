@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int creditScore, income;
+    cout << "Enter the credit score: ";
+    cin >> creditScore;
+    cout << "Enter the annual income: ";
+    cin >> income;
+
+    if(creditScore >= 700 && income >= 50000) {
+        cout << "Eligible for loan." << endl;
+    } else {
+        cout << "Not eligible for loan." << endl;
+    }
+    return 0;
+}

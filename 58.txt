@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double balance, deposit, withdrawal, fee;
+    cout << "Enter the initial balance: ";
+    cin >> balance;
+    cout << "Enter the deposit amount: ";
+    cin >> deposit;
+    cout << "Enter the withdrawal amount: ";
+    cin >> withdrawal;
+    cout << "Enter the fee amount: ";
+    cin >> fee;
+
+    balance += deposit;
+    balance -= withdrawal;
+    balance -= fee;
+
+    cout << "The current balance is: " << balance << endl;
+    return 0;
+}

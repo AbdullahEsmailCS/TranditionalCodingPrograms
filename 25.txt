@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double number;
+    cout << "Enter a number: ";
+    cin >> number;
+    double half = number / 2;
+    cout << "Half of the number is: " << half << endl;
+    return 0;
+}

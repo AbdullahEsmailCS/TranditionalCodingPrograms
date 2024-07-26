@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double balance, deposit;
+    cout << "Enter the current balance: ";
+    cin >> balance;
+    cout << "Enter the amount to deposit: ";
+    cin >> deposit;
+
+    balance += deposit;
+    cout << "Deposit successful. New balance: " << balance << endl;
+    return 0;
+}

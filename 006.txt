@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age;
+    cout << "Enter your age: ";
+    cin >> age;
+    if(age % 2 != 0) {
+        cout << "Your age is an odd number." << endl;
+    } else {
+        cout << "Your age is not an odd number." << endl;
+    }
+    return 0;
+}

@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double originalPrice, discountRate, discountAmount, finalPrice;
+    cout << "Enter the original price: ";
+    cin >> originalPrice;
+    cout << "Enter the discount rate (as a percentage): ";
+    cin >> discountRate;
+    discountAmount = originalPrice * (discountRate / 100);
+    finalPrice = originalPrice - discountAmount;
+    cout << "The discount amount is: " << discountAmount << endl;
+    cout << "The final price after discount is: " << finalPrice << endl;
+    return 0;
+}

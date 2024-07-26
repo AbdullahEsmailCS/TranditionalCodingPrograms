@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double balance1, balance2, transfer;
+    cout << "Enter the balance of account holder 1: ";
+    cin >> balance1;
+    cout << "Enter the balance of account holder 2: ";
+    cin >> balance2;
+    cout << "Enter the transfer amount: ";
+    cin >> transfer;
+
+    if(transfer <= balance1) {
+        balance1 -= transfer;
+        balance2 += transfer;
+        cout << "Transfer successful. New balances:\n";
+        cout << "Account holder 1: " << balance1 << "\n";
+        cout << "Account holder 2: " << balance2 << "\n";
+    } else {
+        cout << "Insufficient funds in account holder 1's account.\n";
+    }
+
+    return 0;
+}

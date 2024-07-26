@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double serviceCost, serviceFee, serviceFeeRate;
+    cout << "Enter the service cost: ";
+    cin >> serviceCost;
+    cout << "Enter the service fee rate (as a percentage): ";
+    cin >> serviceFeeRate;
+    serviceFee = serviceCost * (serviceFeeRate / 100);
+    cout << "The service fee is: " << serviceFee << endl;
+    return 0;
+}

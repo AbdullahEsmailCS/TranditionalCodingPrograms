@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    double principal, annualRate, monthlyRate, monthlyPayment;
+    int months;
+    cout << "Enter the loan principal amount: ";
+    cin >> principal;
+    cout << "Enter the annual interest rate (in percentage): ";
+    cin >> annualRate;
+    cout << "Enter the number of months: ";
+    cin >> months;
+
+    monthlyRate = annualRate / 12 / 100;
+    monthlyPayment = (principal * monthlyRate * pow(1 + monthlyRate, months)) / (pow(1 + monthlyRate, months) - 1);
+    cout << "The monthly payment on the loan is: " << monthlyPayment << endl;
+    return 0;
+}

@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int seconds, minutes, hours;
+    cout << "Enter the number of seconds: ";
+    cin >> seconds;
+
+    minutes = seconds / 60;
+    hours = seconds / 3600;
+    seconds = seconds % 60;
+
+    cout << "Minutes: " << minutes << endl;
+    cout << "Hours: " << hours << endl;
+    cout << "Remaining Seconds: " << seconds << endl;
+    return 0;
+}

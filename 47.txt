@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double bill, amountPaid;
+    cout << "Enter the total bill amount: ";
+    cin >> bill;
+    cout << "Enter the amount paid: ";
+    cin >> amountPaid;
+    double remainder = amountPaid - bill;
+    cout << "The remainder after paying the bill is: " << remainder << endl;
+    return 0;
+}

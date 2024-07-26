@@ -1,0 +1,45 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct Person {
+    int id;
+    string firstName;
+    string lastName;
+    string phone;
+    char gender;
+    string maritalStatus;
+    string email;
+    int age;
+};
+
+int main() {
+    Person person;
+    cout << "Enter ID: ";
+    cin >> person.id;
+    cout << "Enter first name: ";
+    cin >> person.firstName;
+    cout << "Enter last name: ";
+    cin >> person.lastName;
+    cout << "Enter phone: ";
+    cin >> person.phone;
+    cout << "Enter gender (M/F): ";
+    cin >> person.gender;
+    cout << "Enter marital status: ";
+    cin >> person.maritalStatus;
+    cout << "Enter email: ";
+    cin >> person.email;
+    cout << "Enter age: ";
+    cin >> person.age;
+
+    cout << "\nPerson Information:\n";
+    cout << "ID: " << person.id << endl;
+    cout << "First Name: " << person.firstName << endl;
+    cout << "Last Name: " << person.lastName << endl;
+    cout << "Phone: " << person.phone << endl;
+    cout << "Gender: " << person.gender << endl;
+    cout << "Marital Status: " << person.maritalStatus << endl;
+    cout << "Email: " << person.email << endl;
+    cout << "Age: " << person.age << endl;
+    return 0;
+}

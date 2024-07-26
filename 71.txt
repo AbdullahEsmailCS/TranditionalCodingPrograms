@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string username, password;
+    string storedUsername = "admin";
+    string storedPassword = "password123";
+
+    cout << "Enter username: ";
+    cin >> username;
+    cout << "Enter password: ";
+    cin >> password;
+
+    if (username == storedUsername && password == storedPassword) {
+        cout << "Authentication successful!" << endl;
+    } else {
+        cout << "Authentication failed." << endl;
+    }
+    return 0;
+}

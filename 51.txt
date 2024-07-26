@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int quantity;
+    double pricePerUnit, totalAmount;
+    cout << "Enter the quantity of products: ";
+    cin >> quantity;
+    cout << "Enter the price per unit: ";
+    cin >> pricePerUnit;
+    totalAmount = quantity * pricePerUnit;
+    cout << "The total amount for the products is: " << totalAmount << endl;
+    return 0;
+}

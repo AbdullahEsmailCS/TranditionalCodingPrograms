@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double bill, taxRate;
+    cout << "Enter the total bill amount: ";
+    cin >> bill;
+    cout << "Enter the tax rate (in percentage): ";
+    cin >> taxRate;
+    double tax = bill * taxRate / 100;
+    cout << "The tax on the bill is: " << tax << endl;
+    return 0;
+}

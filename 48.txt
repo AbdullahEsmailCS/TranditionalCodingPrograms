@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int stock, quantity;
+    cout << "Enter the current stock: ";
+    cin >> stock;
+    cout << "Enter the quantity to decrease: ";
+    cin >> quantity;
+    stock -= quantity;
+    cout << "The updated stock is: " << stock << endl;
+    return 0;
+}

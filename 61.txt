@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double balance, withdrawal;
+    cout << "Enter the current balance: ";
+    cin >> balance;
+    cout << "Enter the amount to withdraw: ";
+    cin >> withdrawal;
+
+    if(withdrawal <= balance) {
+        balance -= withdrawal;
+        cout << "Withdrawal successful. New balance: " << balance << endl;
+    } else {
+        cout << "Insufficient funds." << endl;
+    }
+    return 0;
+}

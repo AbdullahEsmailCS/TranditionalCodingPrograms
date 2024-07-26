@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int batteryLevel;
+    cout << "Enter the battery level (0-100): ";
+    cin >> batteryLevel;
+    if(batteryLevel < 20) {
+        cout << "Battery level is low, please charge your device." << endl;
+    }
+    return 0;
+}

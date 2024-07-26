@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    const int READ = 4;  // 100 in binary
+    const int WRITE = 2; // 010 in binary
+    const int EXECUTE = 1; // 001 in binary
+
+    int permissions;
+    cout << "Enter the permissions (as a number): ";
+    cin >> permissions;
+
+    cout << "Permissions:\n";
+    if(permissions & READ) {
+        cout << "Read\n";
+    } else {
+        cout << "No Read\n";
+    }
+
+    if(permissions & WRITE) {
+        cout << "Write\n";
+    } else {
+        cout << "No Write\n";
+    }
+
+    if(permissions & EXECUTE) {
+        cout << "Execute\n";
+    } else {
+        cout << "No Execute\n";
+    }
+
+    return 0;
+}

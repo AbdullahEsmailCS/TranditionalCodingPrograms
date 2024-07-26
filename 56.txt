@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double costPrice, sellingPrice, profitLoss;
+    cout << "Enter the cost price: ";
+    cin >> costPrice;
+    cout << "Enter the selling price: ";
+    cin >> sellingPrice;
+
+    if(sellingPrice > costPrice) {
+        profitLoss = sellingPrice - costPrice;
+        cout << "Profit: " << profitLoss << endl;
+    } else {
+        profitLoss = costPrice - sellingPrice;
+        cout << "Loss: " << profitLoss << endl;
+    }
+    return 0;
+}
